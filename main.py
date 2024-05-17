@@ -9,4 +9,5 @@ eraser = Product("Eraser", 50)
 inventory.add_product(pen, 500)
 inventory.add_product(eraser, 200)
 
+
 inventory.print_inventory()
