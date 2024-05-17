@@ -3,5 +3,10 @@ from Product import Product
 
 inventory = Inventory()
 
-product1 = Product("Pen",20, 500)
-product2 = Product("Eraser", 50, 200)
+pen = Product("Pen",20)
+eraser = Product("Eraser", 50)
+
+inventory.add_product(pen, 500)
+inventory.add_product(eraser, 200)
+
+inventory.print_inventory()
