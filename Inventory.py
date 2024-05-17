@@ -13,12 +13,15 @@ class Inventory:
     def add_product(self, product, quantity):
         for item in self._products:
             if item['product'].name == product.name:
-                # If it exists, update the quantity
                 item['quantity'] += quantity
+                print(f"{product.name} added to inventory of quantity {quantity}")
                 break
         else:
             self._products.append({'product': product, 'quantity': quantity})
+            print(f"Added {quantity} to {product.name}")
 
     def print_inventory(self):
         for item in self._products:
             print(f"Product: {item['product'].name}, Quantity: {item['quantity']}")
+
+
