@@ -1,8 +1,7 @@
 class Product:
-    def __init__(self, name, price, quantity):
+    def __init__(self, name, price):
         self.name = name
         self.price = price
-        self.quantity = quantity
 
     @property
     def name(self):
@@ -19,11 +18,3 @@ class Product:
     @price.setter
     def price(self, price):
         self._price = price
-
-    @property
-    def quantity(self):
-        return self._quantity
-
-    @quantity.setter
-    def quantity(self, quantity):
-        self._quantity = quantity
