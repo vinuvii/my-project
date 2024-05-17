@@ -24,4 +24,16 @@ class Inventory:
         for item in self._products:
             print(f"Product: {item['product'].name}, Quantity: {item['quantity']}")
 
+    def remove_product(self, product, quantity):
+        for item in self._products:
+            if item['product'].name == product.name:
+                if item['quantity'] >= quantity:
+                    item['quantity'] -= quantity
+                    print(f"{quantity} reduced from {product.name}")
+                else:
+                    print(f"Not enough {product.name} in inventory to remove.")
+                break
+        else:
+            print(f"{product.name} not found in inventory.")
+
 

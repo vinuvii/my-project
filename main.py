@@ -8,6 +8,7 @@ eraser = Product("Eraser", 50)
 
 inventory.add_product(pen, 500)
 inventory.add_product(eraser, 200)
-
+inventory.remove_product(pen, 50)
+inventory.remove_product(eraser, 250)
 
 inventory.print_inventory()
